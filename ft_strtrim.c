@@ -1,6 +1,6 @@
 #include "libft.h"
 
-int l_isspace(int c, const char* charset)
+static int l_isspace(int c, const char* charset)
 {
     while(*charset)
     {
@@ -24,5 +24,5 @@ char *ft_strtrim(char const *s, const char* charset)
     j--;
     while(l_isspace(s[j], charset))
         j--;
-    return (ft_strsub(s, i, j - i + 1));
+    return (ft_substr(s, i, j - i + 1));
 }

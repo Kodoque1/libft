@@ -21,7 +21,7 @@ int count_word(const char *str, char c)
     return (count);
 }
 
-char** ft_strsplit(char const *s, char c)
+char** ft_split(char const *s, char c)
 {
     int words;
     int i;
@@ -42,7 +42,7 @@ char** ft_strsplit(char const *s, char c)
         k = j;
         while(s[k] && s[k] != c)
             k++;
-        strs[i] = ft_strsub(s, j, k - j);
+        strs[i] = ft_substr(s, j, k - j);
         j = k;
         i++;
     }
