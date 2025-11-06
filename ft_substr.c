@@ -7,7 +7,7 @@ char* ft_substr(char const *s, unsigned int start, size_t len)
     buf = (char *) malloc((len + 1) * sizeof(char));
     if(!buf)
         return NULL;
-    ft_strlcat(buf, s + start, (len + 1) * sizeof(char));
+    ft_strlcpy(buf, s + start, (len + 1) * sizeof(char));
     buf[len]='\0';
     return (buf);
 }

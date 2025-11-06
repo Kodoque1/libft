@@ -2,7 +2,7 @@
 
 int ft_tolower(int c)
 {
-    if (('A' < c) && (c < 'Z'))
+    if (('A' <= c) && (c <= 'Z'))
         return (c + OFFSET);
     return (c);
 }

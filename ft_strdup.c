@@ -9,6 +9,6 @@ char* ft_strdup(const char *s)
     str = (char *) malloc((ft_strlen(s) +1) * sizeof(char));
     if(!str)
         return NULL;
-    ft_strlcat(str, s, len);
+    ft_strlcpy(str, s, len);
     return (str);
 }

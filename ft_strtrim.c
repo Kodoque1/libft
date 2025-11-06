@@ -6,6 +6,7 @@ static int l_isspace(int c, const char* charset)
     {
         if (c == *charset)
             return (1);
+        charset++;
     }
     return (0);
 }

@@ -35,6 +35,7 @@ void ft_bzero(void *s, size_t n);
 char *ft_strchr(const char *s, int c);
 char *ft_strrchr(const char *s, int c);
 char *ft_strnstr(const char *big,	const char *little, int len);
+int ft_strlcpy(char *dest, const char *src, size_t n);
 int ft_strlcat(char *dest, const char *src, size_t n);
 int ft_strlen(const char *str);
 int ft_strnlen(const char *str, size_t len);
