@@ -1,16 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_lstclear.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/10 11:58:35 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 11:58:40 by zaddi            ###   ########.fr       */
+/*   Created: 2025/11/10 12:02:57 by zaddi             #+#    #+#             */
+/*   Updated: 2025/11/10 14:12:43 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(int c)
+#include "libft.h"
+
+void	ft_lstclear(t_list **alst, void (*del)(void *))
 {
-	return ('a' <= c && 'z' >= c) || ('A' <= c && 'Z' >= c);
+	if (*alst)
+	{
+		ft_lstclear(&((*alst)->next), del);
+		ft_lstdelone(*alst, del);
+	}
 }
