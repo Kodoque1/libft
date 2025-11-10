@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 12:02:57 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 14:12:43 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/10 14:53:56 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,5 @@ void	ft_lstclear(t_list **alst, void (*del)(void *))
 		ft_lstclear(&((*alst)->next), del);
 		ft_lstdelone(*alst, del);
 	}
+	*alst = NULL;
 }

@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 12:05:53 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 12:11:30 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/10 17:01:03 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_strnlen(const char *str, size_t n)
 	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0' && (i < n))
+	while (str[i] && (i < n))
 		i++;
 	return (i);
 }

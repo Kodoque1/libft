@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 12:06:10 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 12:08:05 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/10 15:54:45 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,11 +15,12 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*buf;
+	int		n;
 
-	buf = (char *)malloc((len + 1) * sizeof(char));
+	n = (len + 1) * sizeof(char);
+	buf = (char *)malloc((n));
 	if (!buf)
 		return (NULL);
-	ft_strlcpy(buf, s + start, (len + 1) * sizeof(char));
-	buf[len] = '\0';
+	ft_strlcpy(buf, s + start, n);
 	return (buf);
 }

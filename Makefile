@@ -1,20 +1,20 @@
 NAME := libft.a
 SRC :=  $(wildcard ft_*.c)
 OBJ  := $(SRC:.c=.o)
-TEST := Test 
+TEST := Test
 MAKEFLAGS += -r
 
 RM := rm -f
-CC := cc 
+CC := cc
 AR = ar rcs
 CFLAGS := -Werror -Wextra -Wall
 
 %.o : %.c
-	$(CC) -c $(CFLAGS) $(CPPFLAGS) $< -o $@
+	$(CC) -g3 -c $(CFLAGS) $(CPPFLAGS) $< -o $@
 
 all: $(NAME)
 
-$(NAME): $(OBJ) 
+$(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
 # === CLEANING UP ===
