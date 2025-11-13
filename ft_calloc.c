@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 13:02:53 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 13:22:01 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/13 11:06:44 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,6 @@ void	*calloc(size_t nmemb, size_t size)
 	ptr = NULL;
 	if (nmemb && size)
 	{
-
-		if (nmemb > (__SIZE_MAX__ / size))
-			return (NULL);
 		ptr = malloc(nmemb * size);
 		if (!ptr)
 			return (NULL);

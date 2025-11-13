@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 12:05:37 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 16:36:47 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/13 10:59:34 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,11 +24,8 @@ int	ft_strlcpy(char *dst, const char *src, size_t size)
 			dst[i] = src[i];
 			i++;
 		}
-		while (i < size)
-		{
+		if (i < size)
 			dst[i] = '\0';
-			i++;
-		}
 	}
 	return (ft_strlen(src));
 }

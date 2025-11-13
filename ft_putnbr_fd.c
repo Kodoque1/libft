@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 12:04:45 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 12:04:48 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/13 11:11:10 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	rec_putnbr_fd(long n, int fd)
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	long l;
+	long	l;
 
 	l = n;
 	if (l < 0)

@@ -6,11 +6,11 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 11:59:17 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 11:59:26 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/13 10:58:18 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_isascii(int c)
 {
-	return (((unsigned char)c) <= 127);
+	return ((unsigned int) c <= 127);
 }

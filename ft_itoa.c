@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 12:01:40 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/10 12:02:04 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/13 11:10:40 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,12 +32,14 @@ int	size_of_int(int n)
 
 char	*ft_itoa(int n)
 {
-	int len;
-	int start;
-	long l = n;
+	int		len;
+	int		start;
+	char	*buf;
+	long	l;
 
 	len = size_of_int(n);
-	char *buf = (char *)malloc(sizeof(char) * (len + 1));
+	l = n;
+	buf = (char *)malloc(sizeof(char) * (len + 1));
 	buf[len] = '\0';
 	start = 0;
 	if (l < 0)
