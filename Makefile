@@ -14,7 +14,7 @@ AR = ar rcs
 CFLAGS := -Werror -Wextra -Wall
 
 %.o : %.c
-	$(CC) -g3 -c $(CFLAGS) $< -o $@
+	$(CC) -c $(CFLAGS) $< -o $@
 
 all: $(NAME)
 

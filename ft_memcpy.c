@@ -6,7 +6,7 @@
 /*   By: zaddi <zaddi@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/10 12:04:09 by zaddi             #+#    #+#             */
-/*   Updated: 2025/11/13 11:10:51 by zaddi            ###   ########.fr       */
+/*   Updated: 2025/11/14 15:41:03 by zaddi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,14 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t	i;
 
-	i = 0;
-	while (i < n)
+	if (dest || src)
 	{
-		((char *)dest)[i] = ((char *)src)[i];
-		i++;
+			i = 0;
+		while (i < n)
+		{
+			((char *)dest)[i] = ((char *)src)[i];
+			i++;
+		}
 	}
 	return (dest);
 }
